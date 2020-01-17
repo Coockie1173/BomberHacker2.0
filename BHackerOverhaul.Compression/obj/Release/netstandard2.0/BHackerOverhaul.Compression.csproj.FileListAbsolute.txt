@@ -1,0 +1,8 @@
+C:\Users\Rudje\source\repos\BHackerOverhaul\BHackerOverhaul.Compression\bin\Release\netstandard2.0\BHackerOverhaul.Compression.deps.json
+C:\Users\Rudje\source\repos\BHackerOverhaul\BHackerOverhaul.Compression\bin\Release\netstandard2.0\BHackerOverhaul.Compression.dll
+C:\Users\Rudje\source\repos\BHackerOverhaul\BHackerOverhaul.Compression\bin\Release\netstandard2.0\BHackerOverhaul.Compression.pdb
+C:\Users\Rudje\source\repos\BHackerOverhaul\BHackerOverhaul.Compression\obj\Release\netstandard2.0\BHackerOverhaul.Compression.csprojAssemblyReference.cache
+C:\Users\Rudje\source\repos\BHackerOverhaul\BHackerOverhaul.Compression\obj\Release\netstandard2.0\BHackerOverhaul.Compression.AssemblyInfoInputs.cache
+C:\Users\Rudje\source\repos\BHackerOverhaul\BHackerOverhaul.Compression\obj\Release\netstandard2.0\BHackerOverhaul.Compression.AssemblyInfo.cs
+C:\Users\Rudje\source\repos\BHackerOverhaul\BHackerOverhaul.Compression\obj\Release\netstandard2.0\BHackerOverhaul.Compression.dll
+C:\Users\Rudje\source\repos\BHackerOverhaul\BHackerOverhaul.Compression\obj\Release\netstandard2.0\BHackerOverhaul.Compression.pdb

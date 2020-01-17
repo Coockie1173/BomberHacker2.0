@@ -1,0 +1,11 @@
+C:\Users\Rudje\source\repos\BHackerOverhaul\BHackerOverhaul.Ripper\bin\Debug\netstandard2.0\BHackerOverhaul.Ripper.deps.json
+C:\Users\Rudje\source\repos\BHackerOverhaul\BHackerOverhaul.Ripper\bin\Debug\netstandard2.0\BHackerOverhaul.Ripper.dll
+C:\Users\Rudje\source\repos\BHackerOverhaul\BHackerOverhaul.Ripper\bin\Debug\netstandard2.0\BHackerOverhaul.Ripper.pdb
+C:\Users\Rudje\source\repos\BHackerOverhaul\BHackerOverhaul.Ripper\bin\Debug\netstandard2.0\BHackerOverhaul.Compression.dll
+C:\Users\Rudje\source\repos\BHackerOverhaul\BHackerOverhaul.Ripper\bin\Debug\netstandard2.0\BHackerOverhaul.Compression.pdb
+C:\Users\Rudje\source\repos\BHackerOverhaul\BHackerOverhaul.Ripper\obj\Debug\netstandard2.0\BHackerOverhaul.Ripper.csprojAssemblyReference.cache
+C:\Users\Rudje\source\repos\BHackerOverhaul\BHackerOverhaul.Ripper\obj\Debug\netstandard2.0\BHackerOverhaul.Ripper.AssemblyInfoInputs.cache
+C:\Users\Rudje\source\repos\BHackerOverhaul\BHackerOverhaul.Ripper\obj\Debug\netstandard2.0\BHackerOverhaul.Ripper.AssemblyInfo.cs
+C:\Users\Rudje\source\repos\BHackerOverhaul\BHackerOverhaul.Ripper\obj\Debug\netstandard2.0\BHackerOverhaul.Ripper.csproj.CopyComplete
+C:\Users\Rudje\source\repos\BHackerOverhaul\BHackerOverhaul.Ripper\obj\Debug\netstandard2.0\BHackerOverhaul.Ripper.dll
+C:\Users\Rudje\source\repos\BHackerOverhaul\BHackerOverhaul.Ripper\obj\Debug\netstandard2.0\BHackerOverhaul.Ripper.pdb

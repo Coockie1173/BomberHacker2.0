@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{267CD47A-5550-4C81-8B1B-A3EA60019359}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BHackerOverhaul.MainForm</RootNamespace>
+    <AssemblyName>BHackerOverhaul.MainForm</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing.Common, Version=4.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Drawing.Common.4.7.0\lib\net461\System.Drawing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HeaderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeaderForm.Designer.cs">
+      <DependentUpon>HeaderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Info.Designer.cs">
+      <DependentUpon>Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InjectorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InjectorForm.Designer.cs">
+      <DependentUpon>InjectorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReadTextures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReadTextures.Designer.cs">
+      <DependentUpon>ReadTextures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RipperForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RipperForm.Designer.cs">
+      <DependentUpon>RipperForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="HeaderForm.resx">
+      <DependentUpon>HeaderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Info.resx">
+      <DependentUpon>Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InjectorForm.resx">
+      <DependentUpon>InjectorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReadTextures.resx">
+      <DependentUpon>ReadTextures.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RipperForm.resx">
+      <DependentUpon>RipperForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BHackerOverhaul.Compression\BHackerOverhaul.Compression.csproj">
+      <Project>{7a878fdc-aeea-4c86-a626-b49efa1b74c7}</Project>
+      <Name>BHackerOverhaul.Compression</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BHackerOverhaul.FileHandler\BHackerOverhaul.FileHandler.csproj">
+      <Project>{5967ae89-f0fd-4552-ac01-ca0a3147eab4}</Project>
+      <Name>BHackerOverhaul.FileHandler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BHackerOverhaul.Injection\BHackerOverhaul.Injection.csproj">
+      <Project>{d796a0d2-d121-46be-a772-3c12390e012e}</Project>
+      <Name>BHackerOverhaul.Injection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BHackerOverhaul.N64Graphics\BHackerOverhaul.N64Graphics.csproj">
+      <Project>{5c33309c-06bf-4b62-84d0-d4db4ddb3255}</Project>
+      <Name>BHackerOverhaul.N64Graphics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BHackerOverhaul.Ripper\BHackerOverhaul.Ripper.csproj">
+      <Project>{fd6c6f52-7be5-4f36-876a-ef1df0bc0b92}</Project>
+      <Name>BHackerOverhaul.Ripper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\FT_0D_F_22.00018.rgba32_rlt.png" />
+    <Content Include="rn64crc.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="rn64crc.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

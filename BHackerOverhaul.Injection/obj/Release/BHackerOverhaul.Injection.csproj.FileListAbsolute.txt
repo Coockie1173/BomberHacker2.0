@@ -1,0 +1,13 @@
+C:\Users\Rudje\source\repos\BHackerOverhaul\BHackerOverhaul.Injection\bin\Release\BHackerOverhaul.Injection.dll
+C:\Users\Rudje\source\repos\BHackerOverhaul\BHackerOverhaul.Injection\bin\Release\BHackerOverhaul.Injection.pdb
+C:\Users\Rudje\source\repos\BHackerOverhaul\BHackerOverhaul.Injection\bin\Release\BHackerOverhaul.Compression.dll
+C:\Users\Rudje\source\repos\BHackerOverhaul\BHackerOverhaul.Injection\bin\Release\BHackerOverhaul.FileHandler.dll
+C:\Users\Rudje\source\repos\BHackerOverhaul\BHackerOverhaul.Injection\bin\Release\BHackerOverhaul.N64Graphics.dll
+C:\Users\Rudje\source\repos\BHackerOverhaul\BHackerOverhaul.Injection\bin\Release\System.Drawing.Common.dll
+C:\Users\Rudje\source\repos\BHackerOverhaul\BHackerOverhaul.Injection\bin\Release\BHackerOverhaul.Compression.pdb
+C:\Users\Rudje\source\repos\BHackerOverhaul\BHackerOverhaul.Injection\bin\Release\BHackerOverhaul.FileHandler.pdb
+C:\Users\Rudje\source\repos\BHackerOverhaul\BHackerOverhaul.Injection\bin\Release\BHackerOverhaul.N64Graphics.pdb
+C:\Users\Rudje\source\repos\BHackerOverhaul\BHackerOverhaul.Injection\obj\Release\BHackerOverhaul.Injection.csprojAssemblyReference.cache
+C:\Users\Rudje\source\repos\BHackerOverhaul\BHackerOverhaul.Injection\obj\Release\BHackerOverhaul.Injection.csproj.CopyComplete
+C:\Users\Rudje\source\repos\BHackerOverhaul\BHackerOverhaul.Injection\obj\Release\BHackerOverhaul.Injection.dll
+C:\Users\Rudje\source\repos\BHackerOverhaul\BHackerOverhaul.Injection\obj\Release\BHackerOverhaul.Injection.pdb
