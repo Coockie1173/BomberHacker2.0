@@ -202,11 +202,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rudje\\source\\repos\\BHackerOverhaul\\BHackerOverhaul.Ripper\\BHackerOverhaul.Ripper.csproj",
+      "projectUniqueName": "C:\\Users\\Rudje\\source\\repos\\BHackerOverhaul\\BomberHacker2.0\\BHackerOverhaul.Ripper\\BHackerOverhaul.Ripper.csproj",
       "projectName": "BHackerOverhaul.Ripper",
-      "projectPath": "C:\\Users\\Rudje\\source\\repos\\BHackerOverhaul\\BHackerOverhaul.Ripper\\BHackerOverhaul.Ripper.csproj",
+      "projectPath": "C:\\Users\\Rudje\\source\\repos\\BHackerOverhaul\\BomberHacker2.0\\BHackerOverhaul.Ripper\\BHackerOverhaul.Ripper.csproj",
       "packagesPath": "C:\\Users\\Rudje\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rudje\\source\\repos\\BHackerOverhaul\\BHackerOverhaul.Ripper\\obj\\",
+      "outputPath": "C:\\Users\\Rudje\\source\\repos\\BHackerOverhaul\\BomberHacker2.0\\BHackerOverhaul.Ripper\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -227,8 +227,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\Rudje\\source\\repos\\BHackerOverhaul\\BHackerOverhaul.Compression\\BHackerOverhaul.Compression.csproj": {
-              "projectPath": "C:\\Users\\Rudje\\source\\repos\\BHackerOverhaul\\BHackerOverhaul.Compression\\BHackerOverhaul.Compression.csproj"
+            "C:\\Users\\Rudje\\source\\repos\\BHackerOverhaul\\BomberHacker2.0\\BHackerOverhaul.Compression\\BHackerOverhaul.Compression.csproj": {
+              "projectPath": "C:\\Users\\Rudje\\source\\repos\\BHackerOverhaul\\BomberHacker2.0\\BHackerOverhaul.Compression\\BHackerOverhaul.Compression.csproj"
             }
           }
         }

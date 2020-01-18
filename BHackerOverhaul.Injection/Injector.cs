@@ -140,6 +140,11 @@ namespace BHackerOverhaul.Injection
                 BufOffset += 8;
             }
 
+            while(RomL.Count - 1 < 0x7FFFFF)
+            {
+                RomL.Add(0x00);
+            }
+
             //trim ROM
             while((RomL.Count - 1) % 0x400000 != 0x3FFFFF)
             {

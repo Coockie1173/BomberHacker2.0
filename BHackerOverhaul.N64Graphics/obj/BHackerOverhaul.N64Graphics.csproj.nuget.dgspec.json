@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rudje\\source\\repos\\BHackerOverhaul\\BHackerOverhaul.N64Graphics\\BHackerOverhaul.N64Graphics.csproj": {}
+    "C:\\Users\\Rudje\\source\\repos\\BHackerOverhaul\\BomberHacker2.0\\BHackerOverhaul.N64Graphics\\BHackerOverhaul.N64Graphics.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rudje\\source\\repos\\BHackerOverhaul\\BHackerOverhaul.N64Graphics\\BHackerOverhaul.N64Graphics.csproj": {
+    "C:\\Users\\Rudje\\source\\repos\\BHackerOverhaul\\BomberHacker2.0\\BHackerOverhaul.N64Graphics\\BHackerOverhaul.N64Graphics.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rudje\\source\\repos\\BHackerOverhaul\\BHackerOverhaul.N64Graphics\\BHackerOverhaul.N64Graphics.csproj",
+        "projectUniqueName": "C:\\Users\\Rudje\\source\\repos\\BHackerOverhaul\\BomberHacker2.0\\BHackerOverhaul.N64Graphics\\BHackerOverhaul.N64Graphics.csproj",
         "projectName": "BHackerOverhaul.N64Graphics",
-        "projectPath": "C:\\Users\\Rudje\\source\\repos\\BHackerOverhaul\\BHackerOverhaul.N64Graphics\\BHackerOverhaul.N64Graphics.csproj",
+        "projectPath": "C:\\Users\\Rudje\\source\\repos\\BHackerOverhaul\\BomberHacker2.0\\BHackerOverhaul.N64Graphics\\BHackerOverhaul.N64Graphics.csproj",
         "packagesPath": "C:\\Users\\Rudje\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rudje\\source\\repos\\BHackerOverhaul\\BHackerOverhaul.N64Graphics\\obj\\",
+        "outputPath": "C:\\Users\\Rudje\\source\\repos\\BHackerOverhaul\\BomberHacker2.0\\BHackerOverhaul.N64Graphics\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

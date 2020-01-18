@@ -186,11 +186,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rudje\\source\\repos\\BHackerOverhaul\\BHackerOverhaul.Compression\\BHackerOverhaul.Compression.csproj",
+      "projectUniqueName": "C:\\Users\\Rudje\\source\\repos\\BHackerOverhaul\\BomberHacker2.0\\BHackerOverhaul.Compression\\BHackerOverhaul.Compression.csproj",
       "projectName": "BHackerOverhaul.Compression",
-      "projectPath": "C:\\Users\\Rudje\\source\\repos\\BHackerOverhaul\\BHackerOverhaul.Compression\\BHackerOverhaul.Compression.csproj",
+      "projectPath": "C:\\Users\\Rudje\\source\\repos\\BHackerOverhaul\\BomberHacker2.0\\BHackerOverhaul.Compression\\BHackerOverhaul.Compression.csproj",
       "packagesPath": "C:\\Users\\Rudje\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rudje\\source\\repos\\BHackerOverhaul\\BHackerOverhaul.Compression\\obj\\",
+      "outputPath": "C:\\Users\\Rudje\\source\\repos\\BHackerOverhaul\\BomberHacker2.0\\BHackerOverhaul.Compression\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

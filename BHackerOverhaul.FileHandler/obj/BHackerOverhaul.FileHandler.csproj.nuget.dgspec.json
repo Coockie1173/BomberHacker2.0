@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rudje\\source\\repos\\BHackerOverhaul\\BHackerOverhaul.FileHandler\\BHackerOverhaul.FileHandler.csproj": {}
+    "C:\\Users\\Rudje\\source\\repos\\BHackerOverhaul\\BomberHacker2.0\\BHackerOverhaul.FileHandler\\BHackerOverhaul.FileHandler.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rudje\\source\\repos\\BHackerOverhaul\\BHackerOverhaul.FileHandler\\BHackerOverhaul.FileHandler.csproj": {
+    "C:\\Users\\Rudje\\source\\repos\\BHackerOverhaul\\BomberHacker2.0\\BHackerOverhaul.FileHandler\\BHackerOverhaul.FileHandler.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rudje\\source\\repos\\BHackerOverhaul\\BHackerOverhaul.FileHandler\\BHackerOverhaul.FileHandler.csproj",
+        "projectUniqueName": "C:\\Users\\Rudje\\source\\repos\\BHackerOverhaul\\BomberHacker2.0\\BHackerOverhaul.FileHandler\\BHackerOverhaul.FileHandler.csproj",
         "projectName": "BHackerOverhaul.FileHandler",
-        "projectPath": "C:\\Users\\Rudje\\source\\repos\\BHackerOverhaul\\BHackerOverhaul.FileHandler\\BHackerOverhaul.FileHandler.csproj",
+        "projectPath": "C:\\Users\\Rudje\\source\\repos\\BHackerOverhaul\\BomberHacker2.0\\BHackerOverhaul.FileHandler\\BHackerOverhaul.FileHandler.csproj",
         "packagesPath": "C:\\Users\\Rudje\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rudje\\source\\repos\\BHackerOverhaul\\BHackerOverhaul.FileHandler\\obj\\",
+        "outputPath": "C:\\Users\\Rudje\\source\\repos\\BHackerOverhaul\\BomberHacker2.0\\BHackerOverhaul.FileHandler\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
