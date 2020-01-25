@@ -34,6 +34,7 @@
             this.headerReaderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.imageViewerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dLObjToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,6 +45,7 @@
             this.injectorToolStripMenuItem,
             this.headerReaderToolStripMenuItem,
             this.imageViewerToolStripMenuItem,
+            this.dLObjToolStripMenuItem,
             this.infoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -86,6 +88,13 @@
             this.infoToolStripMenuItem.Text = "Info";
             this.infoToolStripMenuItem.Click += new System.EventHandler(this.infoToolStripMenuItem_Click);
             // 
+            // dLObjToolStripMenuItem
+            // 
+            this.dLObjToolStripMenuItem.Name = "dLObjToolStripMenuItem";
+            this.dLObjToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.dLObjToolStripMenuItem.Text = "DL -> Obj";
+            this.dLObjToolStripMenuItem.Click += new System.EventHandler(this.dLObjToolStripMenuItem_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -111,6 +120,7 @@
         private System.Windows.Forms.ToolStripMenuItem headerReaderToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem imageViewerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem infoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dLObjToolStripMenuItem;
     }
 }
 

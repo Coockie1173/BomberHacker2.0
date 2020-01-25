@@ -54,3 +54,8 @@ C:\Users\Rudje\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.Main
 C:\Users\Rudje\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.MainForm\obj\Debug\BHackerOverhaul.MainForm.csproj.CopyComplete
 C:\Users\Rudje\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.MainForm\obj\Debug\BHackerOverhaul.MainForm.exe
 C:\Users\Rudje\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.MainForm\obj\Debug\BHackerOverhaul.MainForm.pdb
+C:\Users\Rudje\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.MainForm\bin\Debug\BHackerOverhaul.DLHandling.dll
+C:\Users\Rudje\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.MainForm\bin\Debug\BHackerOverhaul.3DData.dll
+C:\Users\Rudje\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.MainForm\bin\Debug\BHackerOverhaul.DLHandling.pdb
+C:\Users\Rudje\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.MainForm\bin\Debug\BHackerOverhaul.3DData.pdb
+C:\Users\Rudje\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.MainForm\obj\Debug\BHackerOverhaul.MainForm.ConvertDLToObj.resources

@@ -23,6 +23,7 @@ namespace BHackerOverhaul.MainForm
         HeaderForm header;
         ReadTextures reader;
         Info inforform;
+        ConvertDLToObj convertDLToObj;
 
         private void RipperToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -66,6 +67,13 @@ namespace BHackerOverhaul.MainForm
             inforform = new Info();
             inforform.MdiParent = this;
             inforform.Show();
+        }
+
+        private void dLObjToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            convertDLToObj = new ConvertDLToObj();
+            convertDLToObj.MdiParent = this;
+            convertDLToObj.Show();
         }
     }
 }

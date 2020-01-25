@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConvertDLToObj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConvertDLToObj.Designer.cs">
+      <DependentUpon>ConvertDLToObj.cs</DependentUpon>
+    </Compile>
     <Compile Include="HeaderForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +94,9 @@
     <Compile Include="RipperForm.Designer.cs">
       <DependentUpon>RipperForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ConvertDLToObj.resx">
+      <DependentUpon>ConvertDLToObj.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HeaderForm.resx">
       <DependentUpon>HeaderForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -134,6 +143,10 @@
     <ProjectReference Include="..\BHackerOverhaul.Compression\BHackerOverhaul.Compression.csproj">
       <Project>{7a878fdc-aeea-4c86-a626-b49efa1b74c7}</Project>
       <Name>BHackerOverhaul.Compression</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BHackerOverhaul.DLHandling\BHackerOverhaul.DLHandling.csproj">
+      <Project>{afc92365-415d-48c6-92b6-89e424a5d69f}</Project>
+      <Name>BHackerOverhaul.DLHandling</Name>
     </ProjectReference>
     <ProjectReference Include="..\BHackerOverhaul.FileHandler\BHackerOverhaul.FileHandler.csproj">
       <Project>{5967ae89-f0fd-4552-ac01-ca0a3147eab4}</Project>
