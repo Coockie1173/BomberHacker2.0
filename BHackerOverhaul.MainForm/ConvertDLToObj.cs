@@ -26,13 +26,20 @@ namespace BHackerOverhaul.MainForm
             DialogResult res = open.ShowDialog();
             if(res == DialogResult.OK)
             {
-                string[] OutObj = new DLParser().GetParsedObject(File.ReadAllBytes(open.FileName));
-                SaveFileDialog save = new SaveFileDialog();
-                save.Filter = "object file|*.obj";
-                res = save.ShowDialog();
-                if(res == DialogResult.OK)
+                try
                 {
-                    File.WriteAllLines(save.FileName, OutObj);
+                    string[] OutObj = new DLParser().GetParsedObject(File.ReadAllBytes(open.FileName));
+                    SaveFileDialog save = new SaveFileDialog();
+                    save.Filter = "object file|*.obj";
+                    res = save.ShowDialog();
+                    if (res == DialogResult.OK)
+                    {
+                        File.WriteAllLines(save.FileName, OutObj);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
                 }
             }
         }

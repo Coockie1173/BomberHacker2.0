@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace BHackerOverhaul._3DData
 {
-    public class Tile
+    public class Connection
     {
-        public Vector3 Pos { get; set; }
-    
-        public int TileID { get; set; }
+        public int Connection1;
+        public int Connection2;
+        public int Connection3;
 
-        public int InvisIdentifier { get; set; }
+        public int HeaderID;
     }
 }

@@ -12,89 +12,66 @@ namespace BHackerOverhaul.DLHandling
     {
         public string[] GetParsedObject(byte[] Data)
         {
-            return Vector3ToObj(ParseFile(Data));
+            //return Vector3ToObj(ParseFile(Data));
+            Connection[] cn = null;
+            Tile[] tl = null;
+            ParseFile(Data, out tl, out cn);
+            return Vector3ToObj(tl, cn);
         }
 
-        public string[] Vector3ToObj(Tile[] Coords)
+        public string[] Vector3ToObj(Tile[] Coords, Connection[] connections)
         {
-            List<string> OutPut = new List<string>();
             List<string> V = new List<string>();
             List<string> F = new List<string>();
+            List<string> OutPut = new List<string>();
 
-            int PrevTile = Coords[0].TileID;
-
-            for(int i = 0; i < Coords.Length; i++)
+            int StartIdentifier = -1;
+            int AddedOffset = 1;
+            foreach (Tile T in Coords)
             {
-                try
+                if(StartIdentifier == -1)
                 {
-                    //if(Coords[i].TileID != PrevTile)
-                    //{
-                    //    //build the string 
-                    //    if(PrevTile != 0)
-                    //    {
-                    //        string BuildString = "f";
-                    //        foreach (int id in TempF)
-                    //        {
-                    //            BuildString += $" {id + 1}";
-                    //        }
-                    //        F.Add(BuildString);
-                    //    }
-                    //    PrevTile = Coords[i].TileID;
-                    //    TempF.Clear();
-                    //}
-                    string vec = $"v {Coords[i].Pos.X} {Coords[i].Pos.Y} {Coords[i].Pos.Z}";
-                    if(!V.Contains(vec))
+                    if(T.InvisIdentifier != 0)
                     {
-                        V.Add(vec);
+                        StartIdentifier = T.TileID;
+                    }
+                    else
+                    {
+                        AddedOffset++;
                     }
                 }
-                catch(Exception e)
-                {
-                    
-                }
+                string temp = "v ";
+                temp += T.Pos.ToString();
+                V.Add(temp);
             }
-            int PrevID = 0;
-            //List<string> IDs = new List<string>();
-            List<int> TempF = new List<int>();
-            for(int i = 0; i < Coords.Length; i++)
-            {
-                //if(!OffsetIds.Contains(Coords[i].TileID))
-                //{
-                //    CoordOffsets.Add(new List<int>());
-                //    OffsetIds.Add(Coords[i].TileID);
-                //}
-                //string vec = $"v {Coords[i].Pos.X} {Coords[i].Pos.Y} {Coords[i].Pos.Z}";
-                //int vecOff = V.FindIndex(x => x == vec);
-                //int Offs = OffsetIds.FindIndex(x => x == Coords[i].TileID);
-                //CoordOffsets[Offs].Add(vecOff);                
-                if(PrevID != Coords[i].TileID)
+            int PrevHeader = StartIdentifier;
+            int Delta = 0;
+
+            foreach(Connection C in connections)
+            {                
+                if(PrevHeader != C.HeaderID)
                 {
-                    if(PrevID != -1 && TempF.Count > 0)
-                    {
-                        string BuildF = "f ";
-                        foreach (int id in TempF)
-                        {
-                            BuildF += (id + 1) + " ";
-                        }
-                        F.Add(BuildF);
-                    }
-                    PrevID = Coords[i].TileID;
-                    TempF.Clear();
+                    PrevHeader = C.HeaderID;
+                    AddedOffset += Delta;
+                    Delta = 0;
                 }
-                string vec = $"v {Coords[i].Pos.X} {Coords[i].Pos.Y} {Coords[i].Pos.Z}";
-                int vecOff = V.FindIndex(x => x == vec);
-                TempF.Add(vecOff);
+                string temp = "f ";
+                temp += $"{C.Connection1 + AddedOffset} {C.Connection2 + AddedOffset} {C.Connection3 + AddedOffset}";
+                F.Add(temp);
+                Delta++;
             }
+
             OutPut.AddRange(V);
             OutPut.AddRange(F);
-
             return OutPut.ToArray();
         }
 
-        public Tile[] ParseFile(byte[] Data)
-        {
+        public void ParseFile(byte[] Data, out Tile[] Vectors, out Connection[] Connections)
+        {            
             List<Tile> OutPut = new List<Tile>();
+            List<Connection> Cnections = new List<Connection>();
             int[] HeaderOffsets = new HeaderReader().ReadOffsets(Data);
+            int CurHeader = 0;
 
             //go over each DL command
             try
@@ -104,11 +81,11 @@ namespace BHackerOverhaul.DLHandling
                     try
                     {
                         int CurFilePos = offset;
-                        int TileIDs = 0;
+                        //int VecOffset = 0;
                         while (Data[CurFilePos] != 0xB8)
                         {
                             if (Data[CurFilePos] == 0x04)
-                            {                                
+                            {
                                 //load command spotted
                                 //get length
                                 string BinLength = Convert.ToString(Data[CurFilePos + 2], 2).PadLeft(8, '0');
@@ -120,9 +97,7 @@ namespace BHackerOverhaul.DLHandling
                                     Array.Reverse(temp);
                                 }
                                 int Offset = BitConverter.ToInt16(temp, 0);
-                                int TempCounter = 0;
-                                #region ConvertData
-                                TileIDs = -1;
+                                int LastIdentifier = 10;
                                 for (int i = 0; i < Length; i++)
                                 {
                                     Vector3 vec = new Vector3();
@@ -151,65 +126,72 @@ namespace BHackerOverhaul.DLHandling
                                     vec.Z = (float)buf;
 
                                     Tile t = new Tile();
-                                    t.Pos = vec;
+
                                     temp = new byte[4];
                                     Array.Copy(Data, Offset + 0xC, temp, 0, 4);
                                     if (BitConverter.IsLittleEndian)
                                     {
                                         Array.Reverse(temp);
                                     }
-                                    if(BitConverter.ToInt32(temp,0) == 0)
+                                    t.InvisIdentifier = BitConverter.ToInt32(temp, 0);
+
+                                    t.Pos = vec;
+                                    t.TileID = CurHeader;
+                                    LastIdentifier = t.InvisIdentifier;
+                                    if(t.InvisIdentifier != 0)
                                     {
-                                        t.TileID = -1;
-                                    }
-                                    else
-                                    {
-                                        t.TileID = TileIDs;
-                                    }
-                                    OutPut.Add(t);
+                                        OutPut.Add(t);
+                                    }                    
                                     Offset += 0x10;
 
-                                    TempCounter++;
-
-                                    if (Length % 3 == 0)
-                                    {
-                                        //tris
-                                        if(TempCounter == 3)
-                                        {
-                                            TileIDs += 1;
-                                            TempCounter = 0;
-                                        }
-                                    }
-                                    else
-                                    {
-                                        //quads
-                                        if (TempCounter == 4)
-                                        {
-                                            TileIDs += 1;
-                                            TempCounter = 0;
-                                        }
-                                    }
                                 }
-                                
-                                #endregion
+                                if(LastIdentifier != 0)
+                                {
+                                    CurHeader++;
+                                }
+                                else
+                                {
+                                    //nuttin
+                                }
+                            }
+                            else if(Data[CurFilePos] == 0xB1)
+                            {
+                                //tri2 command
+                                //first connection
+                                Connection con = new Connection();
+                                con.Connection1 = Data[CurFilePos + 1] / 2;
+                                con.Connection2 = Data[CurFilePos + 2] / 2;
+                                con.Connection3 = Data[CurFilePos + 3] / 2;
 
+                                con.HeaderID = CurHeader - 1;
+
+                                Cnections.Add(con);
+
+                                //second connection
+                                con = new Connection();
+                                con.HeaderID = CurHeader - 1;
+                                con.Connection1 = Data[CurFilePos + 5] / 2;
+                                con.Connection2 = Data[CurFilePos + 6] / 2;
+                                con.Connection3 = Data[CurFilePos + 7] / 2;
+                                Cnections.Add(con);
                             }
                             CurFilePos += 0x08;
                         }
                     }
                     catch(Exception e)
                     {
-
+                        throw e;
                     }
 
                 }                
             }
             catch(Exception e)
             {
-
+                throw e;
             }
 
-            return OutPut.ToArray();
+            Vectors = OutPut.ToArray();
+            Connections = Cnections.ToArray();
         }
     }
 }

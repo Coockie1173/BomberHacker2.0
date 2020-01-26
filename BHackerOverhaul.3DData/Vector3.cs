@@ -11,5 +11,10 @@ namespace BHackerOverhaul._3DData
         public float X { get; set; }
         public float Y { get; set; }
         public float Z { get; set; }
+
+        public override string ToString()
+        {
+            return X.ToString() + " " + Y.ToString() + " " + Z.ToString();
+        }
     }
 }
