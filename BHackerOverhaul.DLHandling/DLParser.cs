@@ -180,7 +180,7 @@ namespace BHackerOverhaul.DLHandling
                     }
                     catch(Exception e)
                     {
-                        throw e;
+                        
                     }
 
                 }                
