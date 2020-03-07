@@ -56,6 +56,12 @@
     <Compile Include="ConvertDLToObj.Designer.cs">
       <DependentUpon>ConvertDLToObj.cs</DependentUpon>
     </Compile>
+    <Compile Include="FindItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindItem.Designer.cs">
+      <DependentUpon>FindItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="HeaderForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,9 @@
     </Compile>
     <EmbeddedResource Include="ConvertDLToObj.resx">
       <DependentUpon>ConvertDLToObj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindItem.resx">
+      <DependentUpon>FindItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HeaderForm.resx">
       <DependentUpon>HeaderForm.cs</DependentUpon>

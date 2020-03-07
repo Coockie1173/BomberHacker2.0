@@ -24,6 +24,7 @@ namespace BHackerOverhaul.MainForm
         ReadTextures reader;
         Info inforform;
         ConvertDLToObj convertDLToObj;
+        FindItem Finditem;
 
         private void RipperToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -74,6 +75,13 @@ namespace BHackerOverhaul.MainForm
             convertDLToObj = new ConvertDLToObj();
             convertDLToObj.MdiParent = this;
             convertDLToObj.Show();
+        }
+
+        private void findItemToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Finditem = new FindItem();
+            Finditem.MdiParent = this;
+            Finditem.Show();
         }
     }
 }

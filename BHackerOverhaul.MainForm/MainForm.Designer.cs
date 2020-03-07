@@ -33,8 +33,9 @@
             this.injectorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.headerReaderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.imageViewerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dLObjToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.findItemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,7 +47,8 @@
             this.headerReaderToolStripMenuItem,
             this.imageViewerToolStripMenuItem,
             this.dLObjToolStripMenuItem,
-            this.infoToolStripMenuItem});
+            this.infoToolStripMenuItem,
+            this.findItemToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(650, 24);
@@ -81,6 +83,13 @@
             this.imageViewerToolStripMenuItem.Text = "Image Viewer";
             this.imageViewerToolStripMenuItem.Click += new System.EventHandler(this.imageViewerToolStripMenuItem_Click);
             // 
+            // dLObjToolStripMenuItem
+            // 
+            this.dLObjToolStripMenuItem.Name = "dLObjToolStripMenuItem";
+            this.dLObjToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.dLObjToolStripMenuItem.Text = "DL -> Obj";
+            this.dLObjToolStripMenuItem.Click += new System.EventHandler(this.dLObjToolStripMenuItem_Click);
+            // 
             // infoToolStripMenuItem
             // 
             this.infoToolStripMenuItem.Name = "infoToolStripMenuItem";
@@ -88,12 +97,12 @@
             this.infoToolStripMenuItem.Text = "Info";
             this.infoToolStripMenuItem.Click += new System.EventHandler(this.infoToolStripMenuItem_Click);
             // 
-            // dLObjToolStripMenuItem
+            // findItemToolStripMenuItem
             // 
-            this.dLObjToolStripMenuItem.Name = "dLObjToolStripMenuItem";
-            this.dLObjToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
-            this.dLObjToolStripMenuItem.Text = "DL -> Obj";
-            this.dLObjToolStripMenuItem.Click += new System.EventHandler(this.dLObjToolStripMenuItem_Click);
+            this.findItemToolStripMenuItem.Name = "findItemToolStripMenuItem";
+            this.findItemToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
+            this.findItemToolStripMenuItem.Text = "Find Item";
+            this.findItemToolStripMenuItem.Click += new System.EventHandler(this.findItemToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -121,6 +130,7 @@
         private System.Windows.Forms.ToolStripMenuItem imageViewerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem infoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dLObjToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem findItemToolStripMenuItem;
     }
 }
 

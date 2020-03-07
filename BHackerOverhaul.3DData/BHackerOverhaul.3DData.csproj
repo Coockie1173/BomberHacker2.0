@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Connection.cs" />
     <Compile Include="DLObject.cs" />
+    <Compile Include="SubObject.cs" />
     <Compile Include="Tile.cs" />
     <Compile Include="Vector3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
