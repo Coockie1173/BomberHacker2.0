@@ -21,15 +21,15 @@ namespace BHackerOverhaul.MainForm
         private void button1_Click(object sender, EventArgs e)
         {
             UInt32 FileOffset = (UInt32)numericUpDown1.Value;
-            FileOffset = FileOffset - 0x300000;
+            FileOffset = FileOffset - (UInt32)GlobalData.Instance.ftable_arr[(int)numericUpDown2.Value];
             FileOffset = FileOffset - 0x2008;
 
-            UInt32 TableOffset = 0x300000 + 0x10;
+            UInt32 TableOffset = (UInt32)GlobalData.Instance.ftable_arr[(int)numericUpDown2.Value] + 0x10;
             while(ByteTools.Read4Bytes(GlobalData.Instance.ROM, TableOffset) != FileOffset)
             {
                 TableOffset += 0x08;
             }
-            TableOffset = TableOffset - 0x300000 - 0x10;
+            TableOffset = TableOffset - (UInt32)GlobalData.Instance.ftable_arr[(int)numericUpDown2.Value] - 0x10;
             TableOffset = TableOffset / 0x04 / 0x02;
             MessageBox.Show(TableOffset.ToString());
         }
