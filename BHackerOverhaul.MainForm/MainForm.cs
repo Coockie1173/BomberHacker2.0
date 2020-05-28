@@ -25,6 +25,7 @@ namespace BHackerOverhaul.MainForm
         Info inforform;
         ConvertDLToObj convertDLToObj;
         FindItem Finditem;
+        OBjtest objtester;
 
         private void RipperToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -82,6 +83,13 @@ namespace BHackerOverhaul.MainForm
             Finditem = new FindItem();
             Finditem.MdiParent = this;
             Finditem.Show();
+        }
+
+        private void objTestToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            objtester = new OBjtest();
+            objtester.MdiParent = this;
+            objtester.Show();
         }
     }
 }
