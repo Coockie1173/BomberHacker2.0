@@ -11,6 +11,7 @@ using System.IO;
 using BHackerOverhaul.DLHandling;
 using BHackerOverhaul.FileHandler;
 using BHackerOverhaul.N64Graphics;
+using Microsoft.WindowsAPICodePack.Dialogs;
 
 namespace BHackerOverhaul.MainForm
 {
@@ -32,9 +33,13 @@ namespace BHackerOverhaul.MainForm
             List<string> imageNames = new List<string>();
             OpenFileDialog open = new OpenFileDialog();
             open.Filter = "bin file|*.bin";
+            CommonOpenFileDialog FolSelect = new CommonOpenFileDialog();
+            FolSelect.IsFolderPicker = true;
+
             DialogResult res = open.ShowDialog();
-            if (res == DialogResult.OK)
+            if (res == DialogResult.OK && FolSelect.ShowDialog() == CommonFileDialogResult.Ok)
             {
+                Directory.CreateDirectory(FolSelect.FileName + @"\textures\");
                 try
                 {
                     //OpenFileDialog open = new OpenFileDialog();
@@ -160,9 +165,9 @@ namespace BHackerOverhaul.MainForm
                                         l.Text = DataOffset.ToString("X");
                                         Labels.Add(l);
                                         b.RotateFlip(RotateFlipType.RotateNoneFlipY);
-                                        string filepath = open.FileName.Substring(0, open.FileName.Length - 4) + "-" + p;
-                                        b.Save(filepath + ".bmp");
-                                        imageNames.Add(filepath + ".bmp");
+                                        string filepath = @"\textures\" + Path.GetFileName(open.FileName.Substring(0, open.FileName.Length - 4) + "-" + p + ".bmp");
+                                        b.Save(FolSelect.FileName +filepath);
+                                        imageNames.Add(FolSelect.FileName + filepath);
                                         p++;
                                     }
 
@@ -237,26 +242,32 @@ namespace BHackerOverhaul.MainForm
 
                 try
                 {
-                    SaveFileDialog mtl = new SaveFileDialog();
-                    mtl.Filter = "material file|*.mtl";
-                    res = mtl.ShowDialog();
-                    if (res == DialogResult.OK)
-                    {
-                        string[] OutObj = generateMtl(mtl.FileName, imageNames);
-                        File.WriteAllLines(mtl.FileName, OutObj);
-                    }
+                    string[] OutObj = generateMtl(FolSelect.FileName + @"\exported.mtl", imageNames);
+                    File.WriteAllLines(FolSelect.FileName + @"\exported.mtl", OutObj);
+                    OutObj = new DLParser().GetParsedObject2(File.ReadAllBytes(open.FileName), imageOffsets, imageNames, (FolSelect.FileName + @"exported.mtl").Substring(0, (FolSelect.FileName + @"exported.mtl").Length - 4));
+                    File.WriteAllLines(FolSelect.FileName + @"\exported.obj", OutObj);
+                    //SaveFileDialog mtl = new SaveFileDialog();
+                    //mtl.Filter = "material file|*.mtl";
+                    //res = mtl.ShowDialog();
+                    //if (res == DialogResult.OK)
+                    //{
+                    //    string[] OutObj = generateMtl(mtl.FileName, imageNames);
+                    //    File.WriteAllLines(FolSelect.FileName + @"exported.mtl", OutObj);
+                    //}
 
-                        SaveFileDialog obj = new SaveFileDialog();
-                    obj.Filter = "object file|*.obj";
-                    res = obj.ShowDialog();
+                    //SaveFileDialog obj = new SaveFileDialog();
+                    //obj.Filter = "object file|*.obj";
+                    //res = obj.ShowDialog();
 
-                    if (res == DialogResult.OK)
-                    {
-                        
+                    //if (res == DialogResult.OK)
+                    //{
 
-                        string[] OutObj = new DLParser().GetParsedObject2(File.ReadAllBytes(open.FileName),imageOffsets, imageNames, mtl.FileName.Substring(0,mtl.FileName.Length - 4));
-                        File.WriteAllLines(obj.FileName, OutObj);
-                    }
+
+                    //    string[] OutObj = new DLParser().GetParsedObject2(File.ReadAllBytes(open.FileName),imageOffsets, imageNames, mtl.FileName.Substring(0,mtl.FileName.Length - 4));
+                    //    File.WriteAllLines(obj.FileName, OutObj);
+                    //    OutObj = generateMtl(obj.FileName, imageNames);
+
+                    //}
 
 
                 }
@@ -277,12 +288,14 @@ namespace BHackerOverhaul.MainForm
             foreach (string mtl in imageNames)
             {
                 Output.Add("newmtl " + i);
-                Output.Add("illum 2");
+                Output.Add("illum 1");
                 Output.Add("Kd 0.800000 0.800000 0.800000");
-                Output.Add("Ka 0.200000 0.200000 0.200000");
+                Output.Add("Ka 1.000000 1.000000 1.000000");
                 Output.Add("Ks 0.000000 0.000000 0.000000");
-                Output.Add("Ke 0.501961 0.501961 0.501961");
+                Output.Add("Ke 0.000000 0.000000 0.000000");
                 Output.Add("Ns 0.000000");
+                Output.Add("Ni 1.450000");
+                Output.Add("d 1.000000");
                 Output.Add("map_Kd " + mtl);
                 Output.Add("");
                 i++;
