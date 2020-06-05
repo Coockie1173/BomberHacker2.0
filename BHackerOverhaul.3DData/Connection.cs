@@ -11,7 +11,7 @@ namespace BHackerOverhaul._3DData
         public int Connection1;
         public int Connection2;
         public int Connection3;
-
+        public int mtlId;
         public int HeaderID;
     }
 }

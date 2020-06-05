@@ -337,8 +337,8 @@ namespace BHackerOverhaul.DLHandling
 
 
             OutPut.Add("mtllib " + fileName + ".mtl");
-    OutPut.AddRange(V);
-    OutPut.AddRange(VT);
+            OutPut.AddRange(V);
+            OutPut.AddRange(VT);
     for (int group = 0; group < Groupst.Count; group++)
     {
         if(Groupst[group] != Groupend[group] + 1)
