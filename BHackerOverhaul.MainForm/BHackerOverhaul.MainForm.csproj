@@ -167,6 +167,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BHackerOverhaul.3DData\BHackerOverhaul.3DData.csproj">
+      <Project>{690536c5-294e-498f-9fc9-9542925f868f}</Project>
+      <Name>BHackerOverhaul.3DData</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BHackerOverhaul.Compression\BHackerOverhaul.Compression.csproj">
       <Project>{7a878fdc-aeea-4c86-a626-b49efa1b74c7}</Project>
       <Name>BHackerOverhaul.Compression</Name>

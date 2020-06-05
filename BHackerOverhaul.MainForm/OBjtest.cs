@@ -14,6 +14,7 @@ using BHackerOverhaul._3DData;
 using BHackerOverhaul.N64Graphics;
 using System.Runtime.InteropServices.WindowsRuntime;
 using System.Globalization;
+using Microsoft.WindowsAPICodePack.Dialogs;
 
 namespace BHackerOverhaul.MainForm
 {
@@ -42,7 +43,9 @@ namespace BHackerOverhaul.MainForm
             OpenFileDialog open = new OpenFileDialog();
             open.Filter = "bin file|*.bin";
             DialogResult res = open.ShowDialog();
-            if (res == DialogResult.OK)
+            CommonOpenFileDialog FolSelect = new CommonOpenFileDialog();
+            FolSelect.IsFolderPicker = true;
+            if (res == DialogResult.OK && FolSelect.ShowDialog() == CommonFileDialogResult.Ok)
             {
                 try
                 {
@@ -197,9 +200,9 @@ namespace BHackerOverhaul.MainForm
                                     l.Text = DataOffset.ToString("X");
                                     Labels.Add(l);
                                     b.RotateFlip(RotateFlipType.RotateNoneFlipY);
-                                    string filepath = open.FileName.Substring(0, open.FileName.Length - 4) + "-" + p;
-                                    b.Save(filepath + ".bmp");
-                                    imageNames.Add(filepath + ".bmp");
+                                    string filepath = @"\textures\" + Path.GetFileName(open.FileName.Substring(0, open.FileName.Length - 4) + "-" + p + ".bmp");
+                                    b.Save(FolSelect.FileName + filepath);
+                                    imageNames.Add(FolSelect.FileName + filepath);
                                     p++;
                                     f5 = 0;
                                 }
@@ -339,7 +342,10 @@ namespace BHackerOverhaul.MainForm
             OpenFileDialog open = new OpenFileDialog();
             open.Filter = "bin file|*.bin";
             DialogResult res = open.ShowDialog();
-            if (res == DialogResult.OK)
+            CommonOpenFileDialog FolSelect = new CommonOpenFileDialog();
+            FolSelect.IsFolderPicker = true;
+
+            if (res == DialogResult.OK && FolSelect.ShowDialog() == CommonFileDialogResult.Ok)
             {
                 try
                 {
@@ -612,10 +618,10 @@ namespace BHackerOverhaul.MainForm
                                             l.Text = DataOffset.ToString("X");
                                             Labels.Add(l);
                                             b.RotateFlip(RotateFlipType.RotateNoneFlipY);
-                                            string filepath = open.FileName.Substring(0, open.FileName.Length - 4) + "-" + p;
-                                            b.Save(filepath + ".bmp");
+                                            string filepath = @"\textures\" + Path.GetFileName(open.FileName.Substring(0, open.FileName.Length - 4) + "-" + p + ".bmp");
+                                            b.Save(FolSelect.FileName + filepath);
                                             if (imgOffset == 0 && palOffset == 0) imageNames.Add(" ");
-                                            else imageNames.Add(filepath + ".bmp");
+                                            else imageNames.Add(FolSelect.FileName + filepath);
                                             RList.Add(R.ToString());
                                             GList.Add(G.ToString());
                                             BList.Add(B.ToString());
@@ -762,29 +768,33 @@ namespace BHackerOverhaul.MainForm
 
             try
             {
-                SaveFileDialog mtl = new SaveFileDialog();
-                mtl.Filter = "material file|*.mtl";
-                res = mtl.ShowDialog();
-                if (res == DialogResult.OK)
-                {
-                    string[] OutObj = generateMtl(mtl.FileName, imageNames,RList,GList,BList);
-                    File.WriteAllLines(mtl.FileName, OutObj);
+                    //SaveFileDialog mtl = new SaveFileDialog();
+                    //mtl.Filter = "material file|*.mtl";
+                    //res = mtl.ShowDialog();
+                    //if (res == DialogResult.OK)
+                    //{
+                    //    string[] OutObj = generateMtl(mtl.FileName, imageNames,RList,GList,BList);
+                    //    File.WriteAllLines(mtl.FileName, OutObj);
+                    //}
+
+                    //SaveFileDialog obj = new SaveFileDialog();
+                    //obj.Filter = "object file|*.obj";
+                    //res = obj.ShowDialog();
+
+                    //if (res == DialogResult.OK)
+                    //{
+
+
+                    //        string[] OutObj = GenerateObj("name", mtl.FileName, V, VT, F,fMat); //new DLParser().GetParsedObject2(File.ReadAllBytes(open.FileName), imageOffsets, imageNames, mtl.FileName.Substring(0, mtl.FileName.Length - 4));
+                    //    File.WriteAllLines(obj.FileName, OutObj);
+                    //}
+                    string[] OutObj = generateMtl(FolSelect.FileName + @"\exported.mtl", imageNames, RList, GList, BList);
+                    File.WriteAllLines(FolSelect.FileName + @"\exported.mtl", OutObj);
+                    OutObj = new DLParser().GetParsedObject2(File.ReadAllBytes(open.FileName), imageOffsets, imageNames, (FolSelect.FileName + @"exported.mtl").Substring(0, (FolSelect.FileName + @"exported.mtl").Length - 4));
+                    File.WriteAllLines(FolSelect.FileName + @"\exported.obj", OutObj);
+
+
                 }
-
-                SaveFileDialog obj = new SaveFileDialog();
-                obj.Filter = "object file|*.obj";
-                res = obj.ShowDialog();
-
-                if (res == DialogResult.OK)
-                {
-
-
-                        string[] OutObj = GenerateObj("name", mtl.FileName, V, VT, F,fMat); //new DLParser().GetParsedObject2(File.ReadAllBytes(open.FileName), imageOffsets, imageNames, mtl.FileName.Substring(0, mtl.FileName.Length - 4));
-                    File.WriteAllLines(obj.FileName, OutObj);
-                }
-
-
-            }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
