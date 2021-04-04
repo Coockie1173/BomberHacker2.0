@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "OgzN2+oeWy56maxAS+/anUNUMmfezx0p2G4fsQMyPm681mbX4IGE3Eh/LR1sFH+FfuNB7pnxqiUrx3BCZ/SSXg==",
+  "success": true,
+  "projectFilePath": "D:\\source\\repos\\BHackerOverhaul\\BomberHacker2.0\\BHackerOverhaul.Ripper\\BHackerOverhaul.Ripper.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rudje\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\rudje\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

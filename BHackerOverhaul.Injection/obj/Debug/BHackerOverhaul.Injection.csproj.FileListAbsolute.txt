@@ -24,3 +24,17 @@ C:\Users\Rudje\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.Inje
 C:\Users\Rudje\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.Injection\obj\Debug\BHackerOverhaul.Injection.csproj.CopyComplete
 C:\Users\Rudje\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.Injection\obj\Debug\BHackerOverhaul.Injection.dll
 C:\Users\Rudje\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.Injection\obj\Debug\BHackerOverhaul.Injection.pdb
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.Injection\bin\Debug\BHackerOverhaul.Injection.dll
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.Injection\bin\Debug\BHackerOverhaul.Injection.pdb
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.Injection\bin\Debug\BHackerOverhaul.Compression.dll
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.Injection\bin\Debug\BHackerOverhaul.FileHandler.dll
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.Injection\bin\Debug\BHackerOverhaul.N64Graphics.dll
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.Injection\bin\Debug\System.Drawing.Common.dll
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.Injection\bin\Debug\BHackerOverhaul.Compression.pdb
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.Injection\bin\Debug\BHackerOverhaul.FileHandler.pdb
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.Injection\bin\Debug\BHackerOverhaul.N64Graphics.pdb
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.Injection\obj\Debug\BHackerOverhaul.Injection.csprojAssemblyReference.cache
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.Injection\obj\Debug\BHackerOverhaul.Injection.csproj.CoreCompileInputs.cache
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.Injection\obj\Debug\BHackerOverhaul.Injection.csproj.CopyComplete
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.Injection\obj\Debug\BHackerOverhaul.Injection.dll
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.Injection\obj\Debug\BHackerOverhaul.Injection.pdb

@@ -20,3 +20,15 @@ C:\Users\Rudje\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.Ripp
 C:\Users\Rudje\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.Ripper\obj\Debug\netstandard2.0\BHackerOverhaul.Ripper.csproj.CopyComplete
 C:\Users\Rudje\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.Ripper\obj\Debug\netstandard2.0\BHackerOverhaul.Ripper.dll
 C:\Users\Rudje\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.Ripper\obj\Debug\netstandard2.0\BHackerOverhaul.Ripper.pdb
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.Ripper\bin\Debug\netstandard2.0\BHackerOverhaul.Ripper.deps.json
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.Ripper\bin\Debug\netstandard2.0\BHackerOverhaul.Ripper.dll
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.Ripper\bin\Debug\netstandard2.0\BHackerOverhaul.Ripper.pdb
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.Ripper\bin\Debug\netstandard2.0\BHackerOverhaul.Compression.dll
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.Ripper\bin\Debug\netstandard2.0\BHackerOverhaul.Compression.pdb
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.Ripper\obj\Debug\netstandard2.0\BHackerOverhaul.Ripper.csprojAssemblyReference.cache
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.Ripper\obj\Debug\netstandard2.0\BHackerOverhaul.Ripper.AssemblyInfoInputs.cache
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.Ripper\obj\Debug\netstandard2.0\BHackerOverhaul.Ripper.AssemblyInfo.cs
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.Ripper\obj\Debug\netstandard2.0\BHackerOverhaul.Ripper.csproj.CoreCompileInputs.cache
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.Ripper\obj\Debug\netstandard2.0\BHackerOverhaul.Ripper.csproj.CopyComplete
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.Ripper\obj\Debug\netstandard2.0\BHackerOverhaul.Ripper.dll
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.Ripper\obj\Debug\netstandard2.0\BHackerOverhaul.Ripper.pdb

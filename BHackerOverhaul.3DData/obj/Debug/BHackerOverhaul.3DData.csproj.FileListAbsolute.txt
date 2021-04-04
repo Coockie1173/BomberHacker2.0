@@ -3,3 +3,9 @@ C:\Users\Rudje\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.3DDa
 C:\Users\Rudje\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.3DData\obj\Debug\BHackerOverhaul.3DData.csprojAssemblyReference.cache
 C:\Users\Rudje\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.3DData\obj\Debug\BHackerOverhaul.3DData.dll
 C:\Users\Rudje\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.3DData\obj\Debug\BHackerOverhaul.3DData.pdb
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.3DData\bin\Debug\BHackerOverhaul.3DData.dll
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.3DData\bin\Debug\BHackerOverhaul.3DData.pdb
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.3DData\obj\Debug\BHackerOverhaul.3DData.csprojAssemblyReference.cache
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.3DData\obj\Debug\BHackerOverhaul.3DData.csproj.CoreCompileInputs.cache
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.3DData\obj\Debug\BHackerOverhaul.3DData.dll
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.3DData\obj\Debug\BHackerOverhaul.3DData.pdb

@@ -26,6 +26,7 @@ namespace BHackerOverhaul.MainForm
         ConvertDLToObj convertDLToObj;
         FindItem Finditem;
         OBjtest objtester;
+        SetupDataForm SDF;
 
         private void RipperToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -90,6 +91,13 @@ namespace BHackerOverhaul.MainForm
             objtester = new OBjtest();
             objtester.MdiParent = this;
             objtester.Show();
+        }
+
+        private void showSetupInfoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SDF = new SetupDataForm();
+            SDF.MdiParent = this;
+            SDF.Show();
         }
     }
 }

@@ -8,3 +8,14 @@ C:\Users\Rudje\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.DLHa
 C:\Users\Rudje\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.DLHandling\obj\Debug\BHackerOverhaul.DLHandling.csproj.CopyComplete
 C:\Users\Rudje\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.DLHandling\obj\Debug\BHackerOverhaul.DLHandling.dll
 C:\Users\Rudje\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.DLHandling\obj\Debug\BHackerOverhaul.DLHandling.pdb
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.DLHandling\bin\Debug\BHackerOverhaul.DLHandling.dll
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.DLHandling\bin\Debug\BHackerOverhaul.DLHandling.pdb
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.DLHandling\bin\Debug\BHackerOverhaul.3DData.dll
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.DLHandling\bin\Debug\BHackerOverhaul.FileHandler.dll
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.DLHandling\bin\Debug\BHackerOverhaul.3DData.pdb
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.DLHandling\bin\Debug\BHackerOverhaul.FileHandler.pdb
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.DLHandling\obj\Debug\BHackerOverhaul.DLHandling.csprojAssemblyReference.cache
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.DLHandling\obj\Debug\BHackerOverhaul.DLHandling.csproj.CoreCompileInputs.cache
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.DLHandling\obj\Debug\BHackerOverhaul.DLHandling.csproj.CopyComplete
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.DLHandling\obj\Debug\BHackerOverhaul.DLHandling.dll
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.DLHandling\obj\Debug\BHackerOverhaul.DLHandling.pdb

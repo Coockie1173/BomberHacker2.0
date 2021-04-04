@@ -14,3 +14,12 @@ C:\Users\Rudje\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.N64G
 C:\Users\Rudje\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.N64Graphics\obj\Debug\netstandard2.0\BHackerOverhaul.N64Graphics.AssemblyInfo.cs
 C:\Users\Rudje\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.N64Graphics\obj\Debug\netstandard2.0\BHackerOverhaul.N64Graphics.dll
 C:\Users\Rudje\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.N64Graphics\obj\Debug\netstandard2.0\BHackerOverhaul.N64Graphics.pdb
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.N64Graphics\bin\Debug\netstandard2.0\BHackerOverhaul.N64Graphics.deps.json
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.N64Graphics\bin\Debug\netstandard2.0\BHackerOverhaul.N64Graphics.dll
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.N64Graphics\bin\Debug\netstandard2.0\BHackerOverhaul.N64Graphics.pdb
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.N64Graphics\obj\Debug\netstandard2.0\BHackerOverhaul.N64Graphics.csprojAssemblyReference.cache
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.N64Graphics\obj\Debug\netstandard2.0\BHackerOverhaul.N64Graphics.AssemblyInfoInputs.cache
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.N64Graphics\obj\Debug\netstandard2.0\BHackerOverhaul.N64Graphics.AssemblyInfo.cs
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.N64Graphics\obj\Debug\netstandard2.0\BHackerOverhaul.N64Graphics.csproj.CoreCompileInputs.cache
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.N64Graphics\obj\Debug\netstandard2.0\BHackerOverhaul.N64Graphics.dll
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.N64Graphics\obj\Debug\netstandard2.0\BHackerOverhaul.N64Graphics.pdb

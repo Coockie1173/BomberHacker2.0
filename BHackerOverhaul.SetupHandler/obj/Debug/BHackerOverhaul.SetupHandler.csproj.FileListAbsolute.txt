@@ -1,0 +1,6 @@
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.SetupHandler\bin\Debug\BHackerOverhaul.SetupHandler.dll
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.SetupHandler\bin\Debug\BHackerOverhaul.SetupHandler.pdb
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.SetupHandler\obj\Debug\BHackerOverhaul.SetupHandler.csprojAssemblyReference.cache
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.SetupHandler\obj\Debug\BHackerOverhaul.SetupHandler.csproj.CoreCompileInputs.cache
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.SetupHandler\obj\Debug\BHackerOverhaul.SetupHandler.dll
+D:\source\repos\BHackerOverhaul\BomberHacker2.0\BHackerOverhaul.SetupHandler\obj\Debug\BHackerOverhaul.SetupHandler.pdb

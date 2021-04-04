@@ -34,9 +34,10 @@
             this.headerReaderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.imageViewerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dLObjToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.objTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.findItemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.objTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.showSetupInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,7 +50,8 @@
             this.imageViewerToolStripMenuItem,
             this.dLObjToolStripMenuItem,
             this.infoToolStripMenuItem,
-            this.findItemToolStripMenuItem});
+            this.findItemToolStripMenuItem,
+            this.showSetupInfoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(650, 24);
@@ -93,6 +95,13 @@
             this.dLObjToolStripMenuItem.Text = "DL -> Obj";
             this.dLObjToolStripMenuItem.Click += new System.EventHandler(this.dLObjToolStripMenuItem_Click);
             // 
+            // objTestToolStripMenuItem
+            // 
+            this.objTestToolStripMenuItem.Name = "objTestToolStripMenuItem";
+            this.objTestToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.objTestToolStripMenuItem.Text = "ObjTest";
+            this.objTestToolStripMenuItem.Click += new System.EventHandler(this.objTestToolStripMenuItem_Click);
+            // 
             // infoToolStripMenuItem
             // 
             this.infoToolStripMenuItem.Name = "infoToolStripMenuItem";
@@ -107,12 +116,12 @@
             this.findItemToolStripMenuItem.Text = "Find Item";
             this.findItemToolStripMenuItem.Click += new System.EventHandler(this.findItemToolStripMenuItem_Click);
             // 
-            // objTestToolStripMenuItem
+            // showSetupInfoToolStripMenuItem
             // 
-            this.objTestToolStripMenuItem.Name = "objTestToolStripMenuItem";
-            this.objTestToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.objTestToolStripMenuItem.Text = "ObjTest";
-            this.objTestToolStripMenuItem.Click += new System.EventHandler(this.objTestToolStripMenuItem_Click);
+            this.showSetupInfoToolStripMenuItem.Name = "showSetupInfoToolStripMenuItem";
+            this.showSetupInfoToolStripMenuItem.Size = new System.Drawing.Size(99, 20);
+            this.showSetupInfoToolStripMenuItem.Text = "ShowSetupInfo";
+            this.showSetupInfoToolStripMenuItem.Click += new System.EventHandler(this.showSetupInfoToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -142,6 +151,7 @@
         private System.Windows.Forms.ToolStripMenuItem dLObjToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem findItemToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem objTestToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem showSetupInfoToolStripMenuItem;
     }
 }
 

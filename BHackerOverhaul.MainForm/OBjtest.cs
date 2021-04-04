@@ -347,6 +347,7 @@ namespace BHackerOverhaul.MainForm
 
             if (res == DialogResult.OK && FolSelect.ShowDialog() == CommonFileDialogResult.Ok)
             {
+                Directory.CreateDirectory(FolSelect.FileName + @"\textures\");
                 try
                 {
                     //clear images
@@ -435,7 +436,7 @@ namespace BHackerOverhaul.MainForm
 
                                     imgFormat = (Data[CurOffset + 1] & 24) >> 3;
 
-
+                                    
                                     //byte[] Pos = new byte[2];
                                     //switch (f5)
                                     //{
@@ -927,7 +928,15 @@ namespace BHackerOverhaul.MainForm
                     {
                         Palette = new byte[128];
                         //int arrayoffset = (int)DataOffset + 0x400;
-                        Array.Copy(Data, PalOff, Palette, 0, 128);
+                        if(Data.Length > PalOff + 512)
+                        {
+                            Array.Copy(Data, PalOff, Palette, 0, 512);
+                        }
+                        else
+                        {
+                            Array.Copy(Data, PalOff, Palette, 0, Data.Length - PalOff);
+                        }
+                        
                         if(DataOffset != PalOff) N64GraphicsCoding.RenderTexture(g, Data, Palette, (int)DataOffset, SizeX, SizeY, 1, N64Codec.CI8, N64IMode.AlphaCopyIntensity);
                         else N64GraphicsCoding.RenderTexture(g, Data, Palette, (int)DataOffset, SizeX, SizeY, 1, N64Codec.I8, N64IMode.AlphaCopyIntensity);
                         break;
