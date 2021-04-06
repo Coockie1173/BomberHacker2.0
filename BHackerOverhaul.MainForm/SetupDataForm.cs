@@ -33,6 +33,7 @@ namespace BHackerOverhaul.MainForm
 
                 foreach(Section s in TreeData)
                 {
+                    int Length = 0;
                     List<TreeNode> Children = new List<TreeNode>();
                     foreach(SubSection ss in s.SubSections)
                     {
@@ -40,12 +41,13 @@ namespace BHackerOverhaul.MainForm
                         TreeNode TN = new TreeNode(TND);
                         Children.Add(TN);
                         int index = 0;
-                        foreach (ushort sht in ss.Data)
+;                        foreach (ushort sht in ss.Data)
                         {
                             TND = $"0x{Convert.ToString(ss.Offsets[index],16).PadLeft(4,'0')} 0x{Convert.ToString(sht, 16).PadLeft(4,'0')}";
                             TN = new TreeNode(TND);
                             Children.Add(TN);
                             index++;
+                            Length += 2;
                         }
                     }
                     treeView1.Nodes.Add(new TreeNode($"0x{Convert.ToString(s.SectionOffset,16).PadLeft(4, '0')} -- 0x{Convert.ToString(s.AmmPartsInSubsections, 16).PadLeft(2, '0')} 0x{Convert.ToString(s.AmmSubsections, 16).PadLeft(2, '0')} 0x{Convert.ToString(s.UnkByte, 16).PadLeft(2, '0')}", Children.ToArray()));
